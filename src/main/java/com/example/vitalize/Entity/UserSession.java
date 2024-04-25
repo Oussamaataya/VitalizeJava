@@ -18,6 +18,7 @@ public class UserSession implements Serializable {
     }
 
     public Long getId() {
+
         return id;
     }
 
