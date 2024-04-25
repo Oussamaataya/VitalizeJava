@@ -7,6 +7,7 @@ module com.example.vitalize {
     requires java.sql;
         requires org.json;
     requires jbcrypt;
+    requires MaterialFX;
 
 
     opens com.example.vitalize to javafx.fxml;

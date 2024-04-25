@@ -5,8 +5,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="80.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.vitalize.Controlleur.Header">
+<AnchorPane prefHeight="80.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.vitalize.Controlleur.Header">
    <children>
       <ImageView fitHeight="108.0" fitWidth="155.0" layoutX="14.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -15,7 +14,8 @@
       </ImageView>
       <Button fx:id="acceuilbtn" layoutX="213.0" layoutY="28.0" mnemonicParsing="false" onAction="#acceuil" style="-fx-background-color: transparent;" text="Acceuil" textFill="RED" />
       <Button fx:id="profilebtn" layoutX="293.0" layoutY="28.0" mnemonicParsing="false" onAction="#profile" style="-fx-background-color: transparent;" text="Profile" textFill="RED" />
-      <Button fx:id="commentairebtn" layoutX="373.0" layoutY="28.0" mnemonicParsing="false" onAction="#commentaire" style="-fx-background-color: transparent;" text="Commentaire" textFill="RED" />
+      <Button fx:id="publicationbtn" layoutX="373.0" layoutY="28.0" mnemonicParsing="false" onAction="#Publication" style="-fx-background-color: transparent;" text="Publication" textFill="RED" />
+      <Button fx:id="commentairebtn" layoutX="467.0" layoutY="28.0" mnemonicParsing="false" onAction="#Commentaire" style="-fx-background-color: transparent;" text="Commentaire" textFill="RED" />
       <Button fx:id="decbtn" layoutX="713.0" layoutY="28.0" mnemonicParsing="false" onAction="#logout" style="-fx-background-color: red;" text="Déconnexion" textFill="#fffdfd" />
    </children>
 </AnchorPane>

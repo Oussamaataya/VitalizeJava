@@ -10,6 +10,10 @@ import javafx.scene.control.Button;
 import java.io.IOException;
 
 public class Header {
+    public Button profilebtn;
+    public Button publicationbtn;
+    public Button commentairebtn;
+    public Button decbtn;
     @FXML
     private Button acceuilbtn;
     public void acceuil(ActionEvent actionEvent) throws IOException {
@@ -24,13 +28,23 @@ public class Header {
         acceuilbtn.getScene().setRoot(root);
     }
 
-    public void commentaire(ActionEvent actionEvent) {
-    }
+   
 
     public void logout(ActionEvent actionEvent) throws IOException {
         UserSession userSession =UserSession.getInstance();
         userSession.logout();
         FXMLLoader loader=new FXMLLoader(getClass().getResource("/com/example/vitalize/Login.fxml"));
+        Parent root=loader.load();
+        acceuilbtn.getScene().setRoot(root);
+    }
+
+    public void Publication(ActionEvent actionEvent) throws IOException {
+        FXMLLoader loader=new FXMLLoader(getClass().getResource("/com/example/vitalize/ShowPublication.fxml"));
+        Parent root=loader.load();
+        acceuilbtn.getScene().setRoot(root);
+    }
+    public void Commentaire(ActionEvent actionEvent) throws IOException {
+        FXMLLoader loader=new FXMLLoader(getClass().getResource("/com/example/vitalize/ShowCommentaire.fxml"));
         Parent root=loader.load();
         acceuilbtn.getScene().setRoot(root);
     }

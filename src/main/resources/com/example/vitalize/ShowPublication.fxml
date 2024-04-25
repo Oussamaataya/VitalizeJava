@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import java.lang.String?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.vitalize.Controlleur.ShowPublication">
+   <children>
+      <AnchorPane prefHeight="726.0" prefWidth="964.0">
+         <children>
+            <ComboBox fx:id="typeComboBox" layoutX="20.0" layoutY="180.0" prefWidth="150.0" />
+
+            <MFXButton fx:id="likeButton" layoutX="677.0" layoutY="662.0" onAction="#likePublication" prefHeight="26.0" prefWidth="100.0" rippleColor="#403060" style="-fx-background-color: #403060; -fx-text-fill: #ffffff;" text="Like">
+               <font>
+                  <Font name="Century Gothic Bold" size="18.0" />
+               </font>
+            </MFXButton>
+
+            <MFXButton fx:id="dislikeButton" layoutX="805.0" layoutY="662.0" onAction="#dislikePublication" prefHeight="26.0" prefWidth="100.0" rippleColor="#403060" style="-fx-background-color: #403060; -fx-text-fill: #ffffff;" text="Dislike">
+               <font>
+                  <Font name="Century Gothic Bold" size="18.0" />
+               </font>
+            </MFXButton>
+
+            <MFXButton fx:id="Editer" layoutX="145.0" layoutY="662.0" onAction="#Editer" prefHeight="38.0" prefWidth="112.0" rippleColor="#403060" style="-fx-background-color: #403060; -fx-text-fill: #ffffff;" text="Editer">
+               <font>
+                  <Font name="Century Gothic Bold" size="18.0" />
+               </font>
+            </MFXButton>
+            <MFXButton fx:id="Delete" layoutX="272.0" layoutY="662.0" onAction="#deleteSelectedPublication" prefHeight="38.0" prefWidth="124.0" rippleColor="#403060" style="-fx-background-color: #403060; -fx-text-fill: #ffffff;" text="Supprimer">
+               <font>
+                  <Font name="Century Gothic Bold" size="18.0" />
+               </font>
+            </MFXButton>
+            <ListView fx:id="ListPublication" accessibleRole="LIST_ITEM" layoutX="19.0" layoutY="234.0" onMouseClicked="#handleCellClick" prefHeight="378.0" prefWidth="922.0" style="-fx-background-color: rgba(255,255,255,0.2); -fx-border-radius: 10;" stylesheets="@../../../../../../../../java/PilatePulseJAVA/src/main/resources/css/Listview.css">
+               <styleClass>
+                  <String fx:value="list-cell" />
+                  <String fx:value="list-view" />
+               </styleClass>
+            </ListView>
+            <Label fx:id="label1" layoutX="130.0" layoutY="44.0" prefHeight="94.0" prefWidth="768.0" text="       Publication" textAlignment="CENTER" textFill="#403060">
+               <font>
+                  <Font name="Century Gothic Bold" size="72.0" />
+               </font>
+            </Label>
+            <MFXButton fx:id="Ajoutp" layoutX="19.0" layoutY="662.0" onAction="#ajoutpass" prefHeight="38.0" prefWidth="112.0" rippleColor="#403060" style="-fx-background-color: #403060; -fx-text-fill: #ffffff;" text="Ajouter">
+               <font>
+                  <Font name="Century Gothic Bold" size="18.0" />
+               </font>
+            </MFXButton>
+            <MFXButton fx:id="addCommentButton" layoutX="445.0" layoutY="662.0" onAction="#addCommentButtonClicked" prefHeight="26.0" prefWidth="182.0" rippleColor="#403060" style="-fx-background-color: #403060; -fx-text-fill: #ffffff;" text="Add Comment">
+               <font>
+                  <Font name="Century Gothic Bold" size="18.0" />
+               </font>
+            </MFXButton>
+            <TextField fx:id="searchField" layoutX="514.0" layoutY="173.0" prefHeight="38.0" prefWidth="300.0" promptText="Search by Title" />
+            <MFXButton fx:id="searchButton" layoutX="841.0" layoutY="173.0" onAction="#searchByTitle" prefHeight="38.0" prefWidth="100.0" rippleColor="#403060" style="-fx-background-color: #403060; -fx-text-fill: #ffffff;" text="Search">
+               <font>
+                  <Font name="Century Gothic Bold" size="18.0" />
+               </font>
+            </MFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
