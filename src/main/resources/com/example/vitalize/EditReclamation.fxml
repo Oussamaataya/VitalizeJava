@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controllers.EditReclamation"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <children>
+        <TextField fx:id="typeTF" layoutX="408.0" layoutY="33.0" promptText="Type" />
+        <TextArea fx:id="descriptionTF" layoutX="407.0" layoutY="220.0" prefHeight="90.0" prefWidth="150.0" promptText="Description" />
+        <TextField fx:id="medecinTF" layoutX="408.0" layoutY="82.0" promptText="Medecin concerné" />
+        <TextField fx:id="sujetTF" layoutX="408.0" layoutY="126.0" promptText="Sujet" />
+        <TextField fx:id="fileTF" layoutX="408.0" layoutY="174.0" promptText="File" />
+        <Button layoutX="407.0" layoutY="331.0" mnemonicParsing="false" onAction="#EditReclamation" prefHeight="26.0" prefWidth="150.0" text="Modifier Reclamation" />
+    </children>
+
+</AnchorPane>
