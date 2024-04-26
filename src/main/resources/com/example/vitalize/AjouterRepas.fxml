@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="759.0" prefWidth="890.0" style="-fx-background-color: #FFFFFF; -fx-font-size: 16px; -fx-font-weight: bold; -fx-text-fill: #3cb550;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.controllers.AjouterRepas">
+   <children>
+      <VBox prefHeight="759.0" prefWidth="194.0">
+         <fx:include source="sideBar.fxml" />
+      </VBox>
+      <Label layoutX="426.0" layoutY="14.0" prefHeight="30.0" prefWidth="226.0" style="-fx-font-size: 20px; -fx-font-weight: bold;" text="Ajouter un Repas" textFill="#3cb550" />
+      <Label layoutX="228.0" layoutY="51.0" text="Nom Repas:" />
+      <TextField fx:id="addMealtf" layoutX="259.0" layoutY="84.0" prefHeight="38.0" prefWidth="494.0" promptText="Entrez le nom du repas" />
+      <Label layoutX="224.0" layoutY="130.0" text="Recette:" />
+      <TextField fx:id="recipetf" layoutX="257.0" layoutY="156.0" prefHeight="38.0" prefWidth="494.0" promptText="Entrez la recette" />
+      <Label layoutX="214.0" layoutY="201.0" text="Ingrédients:" />
+      <TextField fx:id="ingredientstf" layoutX="257.0" layoutY="227.0" prefHeight="38.0" prefWidth="494.0" promptText="Entrez les ingrédients" />
+      <Label layoutX="226.0" layoutY="329.0" text="Image:" />
+      <TextField fx:id="phototf" layoutX="252.0" layoutY="355.0" prefHeight="38.0" prefWidth="503.0" promptText="Entrez le chemin de l'image" />
+      <Button layoutX="769.0" layoutY="355.0" onAction="#Browse" prefHeight="37.0" prefWidth="91.0" style="-fx-background-color: #808080; -fx-text-fill: #FFFFFF;" text="Parcourir" textFill="WHITE" />
+      <Label layoutX="217.0" layoutY="265.0" text="Type de Repas:" />
+      <TextField fx:id="mealTypetf" layoutX="252.0" layoutY="291.0" prefHeight="38.0" prefWidth="503.0" promptText="Entrez le type de repas" />
+      <Label layoutX="209.0" layoutY="392.0" text="Nombre de personnes:" />
+      <TextField fx:id="nombrePtf" layoutX="252.0" layoutY="418.0" prefHeight="38.0" prefWidth="503.0" promptText="Entrez le nombre de personnes" />
+      <Label layoutX="212.0" layoutY="456.0" text="Durée de préparation:" />
+      <TextField fx:id="durationtf" layoutX="249.0" layoutY="482.0" prefHeight="38.0" prefWidth="510.0" promptText="Entrez la durée de préparation" />
+      <Label layoutX="214.0" layoutY="528.0" text="Quantité:" />
+      <TextField fx:id="quantitytf" layoutX="248.0" layoutY="554.0" prefHeight="38.0" prefWidth="510.0" promptText="Entrez la quantité" />
+      <Label layoutX="235.0" layoutY="599.0" text="Prix:" />
+      <TextField fx:id="pricetf" layoutX="248.0" layoutY="625.0" prefHeight="37.0" prefWidth="510.0" promptText="Entrez le prix" />
+      <Button layoutX="232.0" layoutY="689.0" mnemonicParsing="false" onAction="#Ajouter" prefHeight="48.0" prefWidth="114.0" text="Ajouter" />
+      <Button layoutX="677.0" layoutY="694.0" mnemonicParsing="false" onAction="#naviguer2" prefHeight="37.0" prefWidth="171.0" text="Liste des repas" />
+   </children>
+</AnchorPane>
